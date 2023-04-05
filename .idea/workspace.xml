@@ -4,31 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00dd0760-11c2-46e1-ba53-dbb0d70fbc25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drug-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drug-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="00dd0760-11c2-46e1-ba53-dbb0d70fbc25" name="Changes" comment="roleSevice">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createTables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/role-service/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drug-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manufacturer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,9 +59,38 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-18"
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pharmacy.Main" />
+      <module name="role-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,8 +99,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680702325716</updated>
-      <workItem from="1680702327016" duration="1913000" />
+      <workItem from="1680702327016" duration="14610000" />
     </task>
+    <task id="LOCAL-00001" summary="BasicProject">
+      <created>1680704608884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680704608884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,5 +124,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BasicProject" />
+    <MESSAGE value="roleSevice" />
+    <option name="LAST_COMMIT_MESSAGE" value="roleSevice" />
   </component>
 </project>
