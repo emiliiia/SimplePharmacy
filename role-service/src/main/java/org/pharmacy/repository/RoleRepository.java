@@ -9,8 +9,8 @@ import java.util.List;
 public class RoleRepository {
     private static final String SELECT_ALL_ROLES = "SELECT * FROM role";
     private static final String SELECT_ROLE_BY_ID = "SELECT * FROM role WHERE id = ?";
-    private static final String INSERT_ROLE = "INSERT INTO role(roleName) VALUES(?)";
-    private static final String UPDATE_ROLE = "UPDATE role SET roleName = ? WHERE id = ?";
+    private static final String INSERT_ROLE = "INSERT INTO role(rolename) VALUES(?)";
+    private static final String UPDATE_ROLE = "UPDATE role SET rolename = ? WHERE id = ?";
     private static final String DELETE_ROLE = "DELETE FROM role WHERE id = ?";
 
     private final Connection conn;
@@ -26,7 +26,7 @@ public class RoleRepository {
             while (rs.next()) {
                 Role role = new Role(
                         rs.getInt("id"),
-                        rs.getString("roleName")
+                        rs.getString("rolename")
                 );
                 roles.add(role);
             }
@@ -41,7 +41,7 @@ public class RoleRepository {
             if (rs.next()) {
                 return new Role(
                         rs.getInt("id"),
-                        rs.getString("roleName")
+                        rs.getString("rolename")
                 );
             } else {
                 return null;

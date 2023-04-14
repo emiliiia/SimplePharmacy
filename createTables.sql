@@ -10,3 +10,14 @@ VALUES
     ('Developer'),
     ('Customer Support'),
     ('Sales');
+
+CREATE TABLE manufacturer (
+      id SERIAL PRIMARY KEY,
+      manufacturer_name VARCHAR(255),
+      country VARCHAR(255),
+      agent_name VARCHAR(255),
+      agent_phone_num VARCHAR(255),
+      description TEXT,
+      created_at DATE DEFAULT now(),
+      updated_at DATE DEFAULT now()
+);

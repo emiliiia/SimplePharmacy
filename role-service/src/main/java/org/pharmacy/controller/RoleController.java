@@ -25,12 +25,8 @@ public class RoleController {
         this.gson = gson;
     }
 
-    public String createRole(Request req, Response res) throws SQLException {
-        String name = req.queryParams("roleName");
-        Role role = new Role(name);
+    public void createRole(Role role) throws SQLException {
         roleService.createRole(role);
-        res.status(201);
-        return "Role created successfully";
     }
 
     public String getRoleById(Request req, Response res) throws SQLException {
@@ -49,17 +45,12 @@ public class RoleController {
         return gson.toJson(roles);
     }
 
-    public String updateRole(Request req, Response res) throws SQLException {
+    public void updateRole(Request req, Role updatedRole) throws SQLException {
         int id = Integer.parseInt(req.params(":id"));
         Role role = roleService.getRoleById(id);
         if (role != null) {
-            String name = req.queryParams("roleName");
-            role.setRoleName(name);
-            roleService.updateRole(role);
-            return "Role updated successfully";
-        } else {
-            res.status(404);
-            return "Role not found";
+            updatedRole.setId(id);
+            roleService.updateRole(updatedRole);
         }
     }
 
