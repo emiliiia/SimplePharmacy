@@ -3,9 +3,17 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.38">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1631</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+13753||-9223372036854775808|c|G
+13753||10|c|G
+13753||10|C|G
+13753||10|T|G</Grants>
+      <IntrospectionStateNumber>1750</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
-      <StartupTime>1681341676</StartupTime>
+      <StartupTime>1683722794</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -47,14 +55,14 @@ false Africa/Blantyre
 false Africa/Brazzaville
 false Africa/Bujumbura
 false Africa/Cairo
-true Africa/Casablanca
+false Africa/Casablanca
 true Africa/Ceuta
 false Africa/Conakry
 false Africa/Dakar
 false Africa/Dar_es_Salaam
 false Africa/Djibouti
 false Africa/Douala
-true Africa/El_Aaiun
+false Africa/El_Aaiun
 false Africa/Freetown
 false Africa/Gaborone
 false Africa/Harare
@@ -809,10 +817,13 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>1632</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1751</IntrospectionStateNumber>
       <ObjectId>42240</ObjectId>
-      <Relations>sequence|table|42241|42242|1
-sequence|table|42268|42269|1
+      <Relations>sequence|table|42333|42334|1
+sequence|table|42340|42341|1
+sequence|table|42355|42356|1
+sequence|table|42456|42457|1
+sequence|table|42472|42473|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4237,135 +4248,543 @@ sequence|table|42268|42269|1
     <schema id="264" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1632</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1751</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <sequence id="265" parent="264" name="manufacturer_id_seq">
+    <object-type id="265" parent="264" name="use">
+      <Labels>INTERNAL
+EXTERNAL</Labels>
+      <ObjectId>42384</ObjectId>
+      <StateNumber>1680</StateNumber>
+      <SubCategory>enum</SubCategory>
+      <SubKind>enum</SubKind>
+      <OwnerName>postgres</OwnerName>
+    </object-type>
+    <sequence id="266" parent="264" name="drug_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>42268</ObjectId>
-      <StateNumber>1629</StateNumber>
+      <ObjectId>42456</ObjectId>
+      <StateNumber>1742</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="266" parent="264" name="role_id_seq">
+    <sequence id="267" parent="264" name="manufacturer_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>42241</ObjectId>
-      <StateNumber>1595</StateNumber>
+      <ObjectId>42340</ObjectId>
+      <StateNumber>1668</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="267" parent="264" name="manufacturer">
-      <ObjectId>42269</ObjectId>
-      <StateNumber>1629</StateNumber>
+    <sequence id="268" parent="264" name="orders_id_seq">
+      <DataType>integer|0s</DataType>
+      <ObjectId>42472</ObjectId>
+      <StateNumber>1748</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="269" parent="264" name="roles_id_seq">
+      <DataType>integer|0s</DataType>
+      <ObjectId>42333</ObjectId>
+      <StateNumber>1667</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="270" parent="264" name="users_id_seq">
+      <DataType>integer|0s</DataType>
+      <ObjectId>42355</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="271" parent="264" name="drug">
+      <ObjectId>42457</ObjectId>
+      <StateNumber>1742</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="264" name="role">
-      <ObjectId>42242</ObjectId>
-      <StateNumber>1595</StateNumber>
+    <table id="272" parent="264" name="manufacturer">
+      <ObjectId>42341</ObjectId>
+      <StateNumber>1710</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="269" parent="267" name="id">
+    <table id="273" parent="264" name="orders">
+      <ObjectId>42473</ObjectId>
+      <StateNumber>1748</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="274" parent="264" name="roles">
+      <ObjectId>42334</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="275" parent="264" name="users">
+      <ObjectId>42356</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="276" parent="271" name="id">
+      <DataType>integer|0s</DataType>
+      <DefaultExpression>nextval(&apos;drug_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="277" parent="271" name="drug_name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="271" name="expiration_date">
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="279" parent="271" name="volume">
+      <DataType>double precision|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="280" parent="271" name="price">
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="281" parent="271" name="in_stock">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="282" parent="271" name="manufacturer_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="283" parent="271" name="description">
+      <DataType>text|0s</DataType>
+      <Position>8</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="284" parent="271" name="created_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>9</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="285" parent="271" name="updated_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>10</Position>
+      <StateNumber>1742</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="286" parent="271" name="drug_manufacturer_id_fkey">
+      <ColNames>manufacturer_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42467</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <RefKeyName>manufacturer_pkey</RefKeyName>
+      <StateNumber>1742</StateNumber>
+      <RefTableId>42341</RefTableId>
+      <RefTableName>manufacturer</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="287" parent="271" name="drug_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42465</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1742</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="288" parent="271" name="drug_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42466</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1742</StateNumber>
+      <UnderlyingIndexId>42465</UnderlyingIndexId>
+    </key>
+    <column id="289" parent="272" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;manufacturer_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="270" parent="267" name="manufacturer_name">
+    <column id="290" parent="272" name="manufacturer_name">
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="271" parent="267" name="country">
+    <column id="291" parent="272" name="country">
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="272" parent="267" name="agent_name">
+    <column id="292" parent="272" name="agent_name">
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="273" parent="267" name="agent_phone_num">
+    <column id="293" parent="272" name="agent_phone_num">
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="274" parent="267" name="description">
+    <column id="294" parent="272" name="description">
       <DataType>text|0s</DataType>
       <Position>6</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="275" parent="267" name="created_at">
+    <column id="295" parent="272" name="created_at">
       <DataType>date|0s</DataType>
       <DefaultExpression>now()</DefaultExpression>
       <Position>7</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="276" parent="267" name="updated_at">
+    <column id="296" parent="272" name="updated_at">
       <DataType>date|0s</DataType>
       <DefaultExpression>now()</DefaultExpression>
       <Position>8</Position>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="277" parent="267" name="manufacturer_pkey">
+    <index id="297" parent="272" name="manufacturer_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>42277</ObjectId>
+      <ObjectId>42349</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1629</StateNumber>
+      <StateNumber>1668</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="278" parent="267" name="manufacturer_pkey">
+    <index id="298" parent="272" name="manufacturer_manufacturer_name_key">
+      <ColNames>manufacturer_name</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42351</ObjectId>
+      <StateNumber>1668</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="299" parent="272" name="manufacturer_agent_phone_num_key">
+      <ColNames>agent_phone_num</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42353</ObjectId>
+      <StateNumber>1668</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="300" parent="272" name="manufacturer_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>42278</ObjectId>
+      <ObjectId>42350</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1629</StateNumber>
-      <UnderlyingIndexId>42277</UnderlyingIndexId>
+      <StateNumber>1668</StateNumber>
+      <UnderlyingIndexId>42349</UnderlyingIndexId>
     </key>
-    <column id="279" parent="268" name="id">
+    <key id="301" parent="272" name="manufacturer_manufacturer_name_key">
+      <ColNames>manufacturer_name</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42352</ObjectId>
+      <StateNumber>1668</StateNumber>
+      <UnderlyingIndexId>42351</UnderlyingIndexId>
+    </key>
+    <key id="302" parent="272" name="manufacturer_agent_phone_num_key">
+      <ColNames>agent_phone_num</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42354</ObjectId>
+      <StateNumber>1668</StateNumber>
+      <UnderlyingIndexId>42353</UnderlyingIndexId>
+    </key>
+    <column id="303" parent="273" name="id">
       <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;role_id_seq&apos;::regclass)</DefaultExpression>
+      <DefaultExpression>nextval(&apos;orders_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1595</StateNumber>
+      <StateNumber>1748</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="280" parent="268" name="rolename">
+    <column id="304" parent="273" name="client_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="305" parent="273" name="drug_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="306" parent="273" name="drug_quantity">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="307" parent="273" name="price">
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="308" parent="273" name="order_status">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="309" parent="273" name="order_go">
+      <DataType>boolean|0s</DataType>
+      <DefaultExpression>false</DefaultExpression>
+      <Position>7</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="310" parent="273" name="created_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>8</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="311" parent="273" name="updated_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>9</Position>
+      <StateNumber>1748</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="312" parent="273" name="orders_client_id_fkey">
+      <ColNames>client_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42482</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <RefKeyName>users_pkey</RefKeyName>
+      <StateNumber>1748</StateNumber>
+      <RefTableId>42356</RefTableId>
+      <RefTableName>users</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="313" parent="273" name="orders_drug_id_fkey">
+      <ColNames>drug_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42487</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <RefKeyName>drug_pkey</RefKeyName>
+      <StateNumber>1748</StateNumber>
+      <RefTableId>42457</RefTableId>
+      <RefTableName>drug</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="314" parent="273" name="orders_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42480</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1748</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="315" parent="273" name="orders_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42481</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1748</StateNumber>
+      <UnderlyingIndexId>42480</UnderlyingIndexId>
+    </key>
+    <column id="316" parent="274" name="id">
+      <DataType>integer|0s</DataType>
+      <DefaultExpression>nextval(&apos;roles_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1667</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="317" parent="274" name="rolename">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1595</StateNumber>
+      <StateNumber>1667</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="281" parent="268" name="role_pkey">
+    <index id="318" parent="274" name="roles_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>42246</ObjectId>
+      <ObjectId>42338</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1595</StateNumber>
+      <StateNumber>1667</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="282" parent="268" name="role_pkey">
+    <key id="319" parent="274" name="roles_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>42247</ObjectId>
+      <ObjectId>42339</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1595</StateNumber>
-      <UnderlyingIndexId>42246</UnderlyingIndexId>
+      <StateNumber>1667</StateNumber>
+      <UnderlyingIndexId>42338</UnderlyingIndexId>
+    </key>
+    <column id="320" parent="275" name="id">
+      <DataType>integer|0s</DataType>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="321" parent="275" name="user_name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="322" parent="275" name="user_date_birth">
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="323" parent="275" name="user_phone_num">
+      <DataType>varchar(20)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="324" parent="275" name="user_email">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="325" parent="275" name="role_id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="326" parent="275" name="created_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>7</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="327" parent="275" name="updated_at">
+      <DataType>date|0s</DataType>
+      <DefaultExpression>now()</DefaultExpression>
+      <Position>8</Position>
+      <StateNumber>1669</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="328" parent="275" name="users_role_id_fkey">
+      <ColNames>role_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42370</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <RefKeyName>roles_pkey</RefKeyName>
+      <StateNumber>1669</StateNumber>
+      <RefTableId>42334</RefTableId>
+      <RefTableName>roles</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="329" parent="275" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42364</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1669</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="330" parent="275" name="users_user_phone_num_key">
+      <ColNames>user_phone_num</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42366</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="331" parent="275" name="users_user_email_key">
+      <ColNames>user_email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42368</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="332" parent="275" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42365</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1669</StateNumber>
+      <UnderlyingIndexId>42364</UnderlyingIndexId>
+    </key>
+    <key id="333" parent="275" name="users_user_phone_num_key">
+      <ColNames>user_phone_num</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42367</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <UnderlyingIndexId>42366</UnderlyingIndexId>
+    </key>
+    <key id="334" parent="275" name="users_user_email_key">
+      <ColNames>user_email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>42369</ObjectId>
+      <StateNumber>1669</StateNumber>
+      <UnderlyingIndexId>42368</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

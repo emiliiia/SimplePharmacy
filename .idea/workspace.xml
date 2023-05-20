@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00dd0760-11c2-46e1-ba53-dbb0d70fbc25" name="Changes" comment="roleSevice">
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/controller/ManufacturerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/model/Manufacturer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/repository/ManufacturerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/service/IManufacturerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/service/ManufacturerServiceImpl.java" afterDir="false" />
+    <list default="true" id="00dd0760-11c2-46e1-ba53-dbb0d70fbc25" name="Changes" comment="manufacturerSeviceModelUpdate">
+      <change afterPath="$PROJECT_DIR$/addJSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fillTables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ea0385-4274-4441-9c50-251efbc26b4f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00ea0385-4274-4441-9c50-251efbc26b4f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ea0385-4274-4441-9c50-251efbc26b4f/storage_v2/_src_/database/simplePhamacy.4VPkWQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00ea0385-4274-4441-9c50-251efbc26b4f/storage_v2/_src_/database/simplePhamacy.4VPkWQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/org/pharmacy/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/createTables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/createTables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manufacturer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturer-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/model/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/model/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/repository/ManufacturerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturer-service/src/main/java/org/pharmacy/repository/ManufacturerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/config/DataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/service/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/role-service/src/main/java/org/pharmacy/service/RoleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,28 +47,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/cringe/Architecture/pharmacy&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;PostgreSQL&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.org.pharmacy.Main">
+}</component>
+  <component name="RunManager" selected="Database Script.createTables.sql">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.pharmacy.Main" />
       <module name="role-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.pharmacy.Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pharmacy.Main" />
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.pharmacy.Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pharmacy.Main" />
+      <module name="drug-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.pharmacy.*" />
@@ -99,6 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.pharmacy.Main (2)" />
+        <item itemvalue="Application.org.pharmacy.Main (1)" />
         <item itemvalue="Application.org.pharmacy.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Database Script.createTables.sql" />
@@ -115,7 +147,20 @@
       <updated>1680702325716</updated>
       <workItem from="1680702327016" duration="14678000" />
       <workItem from="1680734712538" duration="7000" />
-      <workItem from="1681470348118" duration="27327000" />
+      <workItem from="1681470348118" duration="28158000" />
+      <workItem from="1681637236758" duration="1843000" />
+      <workItem from="1681720024222" duration="12000" />
+      <workItem from="1682263278878" duration="21486000" />
+      <workItem from="1682451790837" duration="597000" />
+      <workItem from="1682455457843" duration="189000" />
+      <workItem from="1682848888328" duration="66000" />
+      <workItem from="1682858580786" duration="571000" />
+      <workItem from="1683019961790" duration="7000" />
+      <workItem from="1683894664860" duration="1624000" />
+      <workItem from="1684061888803" duration="7089000" />
+      <workItem from="1684398388029" duration="4000" />
+      <workItem from="1684412874127" duration="1536000" />
+      <workItem from="1684594341854" duration="1675000" />
     </task>
     <task id="LOCAL-00001" summary="BasicProject">
       <created>1680704608884</created>
@@ -131,7 +176,42 @@
       <option name="project" value="LOCAL" />
       <updated>1680732239234</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="manufacturerSevice">
+      <created>1681514050472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681514050472</updated>
+    </task>
+    <task id="LOCAL-00004" summary="userSevice">
+      <created>1684604900128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684604900128</updated>
+    </task>
+    <task id="LOCAL-00005" summary="drugSevice">
+      <created>1684604957135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684604957135</updated>
+    </task>
+    <task id="LOCAL-00006" summary="orderSevice">
+      <created>1684604995835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684604995835</updated>
+    </task>
+    <task id="LOCAL-00007" summary="roleSeviceModelUpdate">
+      <created>1684605077611</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684605077611</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +231,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BasicProject" />
     <MESSAGE value="roleSevice" />
-    <option name="LAST_COMMIT_MESSAGE" value="roleSevice" />
+    <MESSAGE value="manufacturerSevice" />
+    <MESSAGE value="userSevice" />
+    <MESSAGE value="drugSevice" />
+    <MESSAGE value="orderSevice" />
+    <MESSAGE value="roleSeviceModelUpdate" />
+    <MESSAGE value="manufacturerSeviceModelUpdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="manufacturerSeviceModelUpdate" />
   </component>
 </project>
