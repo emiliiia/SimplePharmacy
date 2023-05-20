@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoleRepository {
-    private static final String SELECT_ALL_ROLES = "SELECT * FROM role";
-    private static final String SELECT_ROLE_BY_ID = "SELECT * FROM role WHERE id = ?";
-    private static final String INSERT_ROLE = "INSERT INTO role(rolename) VALUES(?)";
-    private static final String UPDATE_ROLE = "UPDATE role SET rolename = ? WHERE id = ?";
-    private static final String DELETE_ROLE = "DELETE FROM role WHERE id = ?";
+    private static final String SELECT_ALL_ROLES = "SELECT * FROM roles";
+    private static final String SELECT_ROLE_BY_ID = "SELECT * FROM roles WHERE id = ?";
+    private static final String INSERT_ROLE = "INSERT INTO roles(rolename) VALUES(?)";
+    private static final String UPDATE_ROLE = "UPDATE roles SET rolename = ? WHERE id = ?";
+    private static final String DELETE_ROLE = "DELETE FROM roles WHERE id = ?";
 
     private final Connection conn;
 

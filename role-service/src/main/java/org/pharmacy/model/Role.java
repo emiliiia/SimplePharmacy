@@ -10,7 +10,7 @@ package org.pharmacy.model;
 public class Role {
     private int id;
 
-    private String roleName;
+    private final String roleName;
 
     public Role(int id, String roleName) {
         this.id = id;
@@ -21,20 +21,12 @@ public class Role {
         this.id = id;
     }
 
-    public Role(String roleName) {
-        this.roleName = roleName;
-    }
-
     public int getId() {
         return id;
     }
 
     public String getRoleName() {
         return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
     }
 
     @Override
