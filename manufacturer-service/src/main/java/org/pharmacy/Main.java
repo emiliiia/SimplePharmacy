@@ -22,7 +22,7 @@ public class Main {
         ManufacturerServiceImpl manufacturerService = new ManufacturerServiceImpl(manufacturerRepository);
         ManufacturerController manufacturerController = new ManufacturerController(manufacturerService, gson);
         // Налаштування маршрутів Spark
-        Spark.port(8080);
+        Spark.port(8083);
 
         Spark.get("/manufacturer/", manufacturerController::getAllManufacturers, gson::toJson);
 

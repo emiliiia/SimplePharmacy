@@ -24,7 +24,7 @@ public class Main {
         RoleController roleController = new RoleController(roleService, gson);
 
         // Налаштування маршрутів Spark
-        Spark.port(8081);
+        Spark.port(8082);
 
         Spark.get("/role/", roleController::getAllRoles, gson::toJson);
 
