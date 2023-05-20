@@ -10,9 +10,6 @@ package org.pharmacy.repository;
 import org.pharmacy.model.Manufacturer;
 
 import java.sql.*;
-import java.lang.reflect.Field;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +17,8 @@ public class ManufacturerRepository {
     private static final String SELECT_ALL_MANUFACTURERS = "SELECT * FROM manufacturer";
     private static final String SELECT_MANUFACTURER_BY_ID = "SELECT * FROM manufacturer WHERE id = ?";
     private static final String INSERT_MANUFACTURER =
-            "INSERT INTO manufacturer(manufacturer_name, country, agent_name, agent_phone_num, description) VALUES(?)";
+            "INSERT INTO manufacturer(manufacturer_name, country, agent_name, agent_phone_num, description) " +
+                    "VALUES(?, ?, ?, ?, ?)";
     private static final String UPDATE_MANUFACTURER = "UPDATE manufacturer SET " +
             "manufacturer_name = ?, country = ?, agent_name = ?, agent_phone_num = ?, description = ? WHERE id = ?";
     private static final String DELETE_MANUFACTURER = "DELETE FROM manufacturer WHERE id = ?";
