@@ -11,8 +11,10 @@ import org.pharmacy.model.Manufacturer;
 import org.pharmacy.repository.ManufacturerRepository;
 import java.sql.SQLException;
 import java.util.List;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class ManufacturerServiceImpl implements IManufacturerService {
+    private static final Logger logger = LogManager.getLogger("ManufacturerServiceImpl");
     private final ManufacturerRepository manufacturerRepository;
 
     public ManufacturerServiceImpl(ManufacturerRepository manufacturerRepository) {
@@ -24,18 +26,22 @@ public class ManufacturerServiceImpl implements IManufacturerService {
     }
 
     public Manufacturer getManufacturerById(int id) throws SQLException {
+        logger.info("getManufacturerById: " + id);
         return manufacturerRepository.getManufacturerById(id);
     }
 
     public List<Manufacturer> getAllManufacturers() throws SQLException {
+        logger.info("getAllManufacturers");
         return manufacturerRepository.getAllManufacturers();
     }
 
     public void updateManufacturer(Manufacturer manufacturer) throws SQLException {
+        logger.info("updateManufacturer with id: " + manufacturer.getId());
         manufacturerRepository.updateManufacturer(manufacturer);
     }
 
     public void deleteManufacturer(int id) throws SQLException {
+        logger.info("deleteManufacturer by id: " + id);
         manufacturerRepository.deleteManufacturer(id);
     }
 }

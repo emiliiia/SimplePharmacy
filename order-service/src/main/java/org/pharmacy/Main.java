@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws SQLException {
 
         // Підключення до бази даних
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "55fm74rml");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "");
 
         Gson gson = new Gson();
 

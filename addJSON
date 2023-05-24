@@ -27,3 +27,12 @@
   "manufacturerId":1,
   "description": "drug"
 }
+
+{
+  "clientId":1,
+  "drugId":1,
+  "drugQuantity":1,
+  "price": 55.5,
+  "orderStatus":"Gone",
+  "orderGo":true
+}

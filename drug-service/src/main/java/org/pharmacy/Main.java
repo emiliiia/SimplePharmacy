@@ -1,6 +1,8 @@
 package org.pharmacy;
 
 import com.google.gson.Gson;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.pharmacy.controller.DrugController;
 import org.pharmacy.model.Drug;
 import org.pharmacy.repository.DrugRepository;
@@ -14,7 +16,7 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
         // Підключення до бази даних
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "55fm74rml");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "");
 
         Gson gson = new Gson();
 

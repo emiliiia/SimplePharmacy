@@ -14,7 +14,7 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
         // Підключення до бази даних
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "55fm74rml");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "");
 
         Gson gson = new Gson();
 
@@ -22,7 +22,7 @@ public class Main {
         UserServiceImpl userService = new UserServiceImpl(userRepository);
         UserController userController = new UserController(userService, gson);
         // Налаштування маршрутів Spark
-        Spark.port(8080);
+        Spark.port(8087);
 
         Spark.get("/user/", userController::getAllUsers, gson::toJson);
 

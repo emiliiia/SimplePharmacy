@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         // Підключення до бази даних
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "55fm74rml");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/simplePhamacy", "postgres", "");
 
         Gson gson = new Gson();
 
@@ -24,7 +24,7 @@ public class Main {
         RoleController roleController = new RoleController(roleService, gson);
 
         // Налаштування маршрутів Spark
-        Spark.port(8082);
+        Spark.port(8086);
 
         Spark.get("/role/", roleController::getAllRoles, gson::toJson);
 

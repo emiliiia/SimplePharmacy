@@ -1,0 +1,123 @@
+2023-05-21 20:09:14,796 [main] INFO  Main - Hello, world
+2023-05-21 20:11:40,813 [qtp1569396249-29] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-21 23:06:56,189 [main] INFO  DrugServiceImpl - getAllDrugs
+2023-05-21 23:06:56,239 [main] INFO  DrugServiceImpl - updateDrug with id: 1
+2023-05-21 23:06:56,327 [main] INFO  DrugServiceImpl - deleteDrug by id: 1
+2023-05-21 23:06:56,361 [main] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-21 23:12:14,729 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:12:14,771 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:12:14,806 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:12:14,837 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:12:40,591 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:12:40,635 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:12:40,776 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:12:40,812 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:13:17,092 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:13:17,136 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:13:17,175 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:13:17,215 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:13:53,868 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:13:53,908 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:13:53,948 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:13:54,089 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:14:37,693 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:14:37,847 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:14:37,890 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:14:37,932 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:16:18,172 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 1
+2023-05-21 23:16:18,215 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:16:18,255 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-21 23:16:18,291 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-21 23:17:02,596 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 10
+2023-05-21 23:17:02,632 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:17:02,669 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 10
+2023-05-21 23:17:02,811 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 10
+2023-05-21 23:17:34,845 [main] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 10
+2023-05-21 23:17:34,881 [main] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-21 23:17:34,918 [main] INFO  ManufacturerServiceImpl - updateManufacturer with id: 10
+2023-05-21 23:17:34,951 [main] INFO  ManufacturerServiceImpl - getManufacturerById: 10
+2023-05-21 23:25:05,878 [main] INFO  OrderServiceImpl - deleteOrder by id: 10
+2023-05-21 23:25:05,923 [main] INFO  OrderServiceImpl - updateOrder with id: 10
+2023-05-21 23:25:06,218 [main] INFO  OrderServiceImpl - getAllDrugs
+2023-05-21 23:25:06,251 [main] INFO  OrderServiceImpl - getOrderById: 10
+2023-05-21 23:31:00,018 [main] INFO  OrderServiceImpl - deleteOrder by id: 10
+2023-05-21 23:31:00,068 [main] INFO  OrderServiceImpl - updateOrder with id: 10
+2023-05-21 23:31:00,144 [main] INFO  OrderServiceImpl - getAllDrugs
+2023-05-21 23:31:00,183 [main] INFO  OrderServiceImpl - getOrderById: 10
+2023-05-21 23:32:19,946 [main] INFO  OrderServiceImpl - deleteOrder by id: 10
+2023-05-21 23:32:20,002 [main] INFO  OrderServiceImpl - updateOrder with id: 1
+2023-05-21 23:32:20,078 [main] INFO  OrderServiceImpl - getAllDrugs
+2023-05-21 23:32:20,228 [main] INFO  OrderServiceImpl - getOrderById: 10
+2023-05-21 23:35:17,087 [main] INFO  OrderServiceImpl - deleteOrder by id: 10
+2023-05-21 23:35:17,134 [main] INFO  OrderServiceImpl - updateOrder with id: 1
+2023-05-21 23:35:17,203 [main] INFO  OrderServiceImpl - getAllDrugs
+2023-05-21 23:35:17,240 [main] INFO  OrderServiceImpl - getOrderById: 10
+2023-05-21 23:38:21,454 [main] INFO  OrderServiceImpl - deleteOrder by id: 10
+2023-05-21 23:38:21,509 [main] INFO  OrderServiceImpl - updateOrder with id: 1
+2023-05-21 23:38:21,585 [main] INFO  OrderServiceImpl - getAllDrugs
+2023-05-21 23:38:21,728 [main] INFO  OrderServiceImpl - getOrderById: 10
+2023-05-21 23:43:46,738 [main] INFO  RoleServiceImpl - getAllRoles
+2023-05-21 23:43:46,799 [main] INFO  RoleServiceImpl - updateRole with id: 10
+2023-05-21 23:43:47,003 [main] INFO  RoleServiceImpl - deleteRole by id: 10
+2023-05-21 23:43:47,041 [main] INFO  RoleServiceImpl - getRoleById: 10
+2023-05-21 23:49:43,208 [main] INFO  UserServiceImpl - getAllUsers
+2023-05-21 23:49:43,367 [main] INFO  UserServiceImpl - updateUser with id: 10
+2023-05-21 23:49:43,457 [main] INFO  UserServiceImpl - deleteUser by id: 10
+2023-05-21 23:49:43,491 [main] INFO  UserServiceImpl - getUserById: 10
+2023-05-21 23:51:19,670 [main] INFO  UserServiceImpl - getAllUsers
+2023-05-21 23:51:19,720 [main] INFO  UserServiceImpl - updateUser with id: 10
+2023-05-21 23:51:19,806 [main] INFO  UserServiceImpl - deleteUser by id: 10
+2023-05-21 23:51:19,841 [main] INFO  UserServiceImpl - getUserById: 10
+2023-05-21 23:51:42,081 [main] INFO  UserServiceImpl - getAllUsers
+2023-05-21 23:51:42,130 [main] INFO  UserServiceImpl - updateUser with id: 10
+2023-05-21 23:51:42,206 [main] INFO  UserServiceImpl - deleteUser by id: 10
+2023-05-21 23:51:42,243 [main] INFO  UserServiceImpl - getUserById: 10
+2023-05-23 12:14:28,424 [qtp1352027604-29] INFO  RoleServiceImpl - getRoleById: 1
+2023-05-23 12:15:01,678 [qtp1352027604-24] INFO  RoleServiceImpl - getAllRoles
+2023-05-23 12:16:19,457 [qtp1352027604-30] INFO  RoleServiceImpl - getRoleById: 4
+2023-05-23 12:16:19,458 [qtp1352027604-30] INFO  RoleServiceImpl - deleteRole by id: 4
+2023-05-23 12:16:55,030 [qtp1352027604-26] INFO  RoleServiceImpl - createRole
+2023-05-23 12:17:04,269 [qtp1352027604-29] INFO  RoleServiceImpl - getAllRoles
+2023-05-23 12:18:06,030 [qtp1352027604-31] INFO  RoleServiceImpl - getRoleById: 6
+2023-05-23 12:18:06,031 [qtp1352027604-31] INFO  RoleServiceImpl - updateRole with id: 6
+2023-05-23 12:18:11,036 [qtp1352027604-26] INFO  RoleServiceImpl - getAllRoles
+2023-05-23 12:18:18,864 [qtp1352027604-29] INFO  RoleServiceImpl - getRoleById: 6
+2023-05-23 12:18:18,865 [qtp1352027604-29] INFO  RoleServiceImpl - updateRole with id: 6
+2023-05-23 12:21:05,892 [qtp836644410-29] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-23 12:21:18,770 [qtp836644410-22] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-23 12:21:49,231 [qtp836644410-24] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-23 12:22:00,107 [qtp836644410-29] INFO  ManufacturerServiceImpl - getManufacturerById: 1
+2023-05-23 12:22:00,108 [qtp836644410-29] INFO  ManufacturerServiceImpl - updateManufacturer with id: 1
+2023-05-23 12:22:59,462 [qtp836644410-29] INFO  ManufacturerServiceImpl - getAllManufacturers
+2023-05-23 12:23:10,453 [qtp836644410-24] INFO  ManufacturerServiceImpl - getManufacturerById: 10
+2023-05-23 12:23:10,454 [qtp836644410-24] INFO  ManufacturerServiceImpl - deleteManufacturer by id: 10
+2023-05-23 12:26:26,305 [qtp1765642827-29] INFO  UserServiceImpl - getUserById: 1
+2023-05-23 12:26:50,501 [qtp1765642827-23] INFO  UserServiceImpl - getAllUsers
+2023-05-23 12:27:54,026 [qtp1765642827-30] INFO  UserServiceImpl - createUser
+2023-05-23 12:27:59,837 [qtp1765642827-26] INFO  UserServiceImpl - getAllUsers
+2023-05-23 12:39:53,478 [qtp1035902090-32] INFO  DrugServiceImpl - getAllDrugs
+2023-05-23 12:40:01,677 [qtp1035902090-24] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-23 12:40:19,033 [qtp1035902090-32] INFO  DrugServiceImpl - createDrug
+2023-05-23 12:40:25,288 [qtp1035902090-31] INFO  DrugServiceImpl - getAllDrugs
+2023-05-23 12:40:47,946 [qtp1035902090-32] INFO  DrugServiceImpl - getDrugById: 3
+2023-05-23 12:40:47,947 [qtp1035902090-32] INFO  DrugServiceImpl - updateDrug with id: 3
+2023-05-23 14:05:40,342 [qtp777796633-29] INFO  OrderServiceImpl - getAllDrugs
+2023-05-23 14:05:50,642 [qtp777796633-23] INFO  OrderServiceImpl - getOrderById: 1
+2023-05-23 14:08:59,744 [qtp777796633-30] INFO  OrderServiceImpl - createOrder
+2023-05-23 14:09:05,437 [qtp777796633-26] INFO  OrderServiceImpl - getAllDrugs
+2023-05-23 14:09:19,953 [qtp777796633-29] INFO  OrderServiceImpl - getOrderById: 2
+2023-05-23 14:09:19,954 [qtp777796633-29] INFO  OrderServiceImpl - deleteOrder by id: 2
+2023-05-23 17:13:43,687 [main] INFO  DrugServiceImpl - getAllDrugs
+2023-05-23 17:13:43,756 [main] INFO  DrugServiceImpl - updateDrug with id: 1
+2023-05-23 17:13:43,842 [main] INFO  DrugServiceImpl - deleteDrug by id: 1
+2023-05-23 17:13:43,910 [main] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-23 17:14:11,105 [main] INFO  DrugServiceImpl - getAllDrugs
+2023-05-23 17:14:11,154 [main] INFO  DrugServiceImpl - updateDrug with id: 12
+2023-05-23 17:14:11,230 [main] INFO  DrugServiceImpl - deleteDrug by id: 1
+2023-05-23 17:14:11,392 [main] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-23 17:14:32,729 [main] INFO  DrugServiceImpl - deleteDrug by id: 12
+2023-05-23 18:05:59,842 [qtp1317068965-29] INFO  DrugServiceImpl - getAllDrugs
+2023-05-23 18:06:03,255 [qtp1317068965-20] INFO  DrugServiceImpl - getDrugById: 1
+2023-05-23 18:06:06,328 [qtp1317068965-26] INFO  DrugServiceImpl - getDrugById: 3
+2023-05-23 18:06:06,329 [qtp1317068965-26] INFO  DrugServiceImpl - updateDrug with id: 3
+2023-05-23 18:06:10,556 [qtp1317068965-29] INFO  DrugServiceImpl - createDrug

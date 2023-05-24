@@ -79,8 +79,8 @@ public class OrderRepository {
             stmt.setInt(2, order.getDrugId());
             stmt.setInt(3, order.getDrugQuantity());
             stmt.setDouble(4, order.getPrice());
-            stmt.setString(6, order.getOrderStatus());
-            stmt.setBoolean(7, order.getOrderGo());
+            stmt.setString(5, order.getOrderStatus());
+            stmt.setBoolean(6, order.getOrderGo());
             stmt.executeUpdate();
         }
     }
@@ -91,9 +91,9 @@ public class OrderRepository {
             stmt.setInt(2, order.getDrugId());
             stmt.setInt(3, order.getDrugQuantity());
             stmt.setDouble(4, order.getPrice());
-            stmt.setString(6, order.getOrderStatus());
-            stmt.setBoolean(7, order.getOrderGo());
-            stmt.setInt(8, order.getId());
+            stmt.setString(5, order.getOrderStatus());
+            stmt.setBoolean(6, order.getOrderGo());
+            stmt.setInt(7, order.getId());
             stmt.executeUpdate();
         }
     }
